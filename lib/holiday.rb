@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
     holiday.each do |key, value|
           str = key.to_s.gsub('_',' ')
-          if(str.include(" "))
+          if(str.include?(" "))
               str.split.each do |x|
               x[0].upcase
          end.join
