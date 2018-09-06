@@ -92,5 +92,5 @@ def all_holidays_with_bbq(holiday_hash)
           return_arr<<holiday if value.include?("BBQ")
     end
   end
-
+return_arr
 end
