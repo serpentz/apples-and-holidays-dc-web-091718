@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
               x.capitalize
            end.join
          :
-          str[0] = str[0].upcase
+          str[0] = str.first.upcase + str[1..-1]
 
       puts "  #{str}: #{value.join(", ")}"
     end
