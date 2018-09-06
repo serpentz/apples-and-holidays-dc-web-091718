@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
           str = (str.include?(" ")) ?
               str.split.each do |x|
               x.capitalize
-           end.join
+           end.join(" ")
          :
           str[0] = str[0].upcase + str[1..-1]
 
