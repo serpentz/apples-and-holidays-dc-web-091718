@@ -71,9 +71,9 @@ def all_supplies_in_holidays(holiday_hash)
           str = key.to_s.gsub('_',' ')
           if(str.include?(" "))
               str.split.each do |x|
-              x[0].upcase
-         end.join
-       else
+              x.capitalize
+           end.join
+         else
           str[0] = str[0].upcase
        end
       puts "  #{str}: #{value.join(", ")}"
