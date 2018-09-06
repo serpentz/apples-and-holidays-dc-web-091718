@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |key, value|
           str = key.to_s.gsub('_',' ')
           str = (str.include?(" ")) ?
-              str.split.each do |x|
+              str.split.map do |x|
               x.capitalize
            end.join(" ")
          :
