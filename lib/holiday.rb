@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
               x[0].upcase
          end.join
        else
-          str[0] = x[0].upcase
+          str[0] = str[0].upcase
        end
       puts "  #{str}: #{value.join(", ")}"
     end
